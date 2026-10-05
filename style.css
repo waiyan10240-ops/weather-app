@@ -1,123 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+/* ... အရင် CSS တွေအတိုင်း ... */
 
-body {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
-.app-container {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 30px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.search-box {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-}
-
-.search-box input {
-    flex: 1;
-    padding: 12px 15px;
-    border: none;
+/* စာရင်းပြမယ့် Box အသစ် */
+.search-results {
+    display: none; /* အစပိုင်းမှာ ဖျောက်ထားမယ် */
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 10px;
-    outline: none;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
 }
 
-.search-box input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.search-box button {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    background: #ff7e5f;
-    color: #fff;
-    font-weight: 600;
+.result-item {
+    padding: 10px 15px;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.search-box button:hover {
-    background: #feb47b;
-    transform: scale(1.05);
-}
-
-.weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.default-text {
-    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
+    transition: 0.2s;
 }
 
-.weather-icon {
-    width: 100px;
-    height: 100px;
+.result-item:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
-.temp {
-    font-size: 48px;
-    font-weight: 600;
+.result-item:last-child {
+    border-bottom: none;
 }
 
-.city {
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-
-.description {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.details {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.col span {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.col p {
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 5px;
-}
+/* ... ကျန်တဲ့ CSS တွေ ... */
