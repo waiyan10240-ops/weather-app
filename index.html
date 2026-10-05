@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Font ကို သုံးထားပါတယ် -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="app-container">
         <div class="search-box">
-            <input type="text" id="city-input" placeholder="မြို့နာမည် ရိုက်ထည့်ပါ... (ဥပမာ - Yangon)">
+            <input type="text" id="city-input" placeholder="မြို့နာမည် (အင်္ဂလိပ်လို ရိုက်ပါ)...">
             <button id="search-btn">ရှာမည်</button>
         </div>
 
+        <!-- ရှာလို့ရလာတဲ့ မြို့စာရင်း ပြမယ့်နေရာ -->
+        <div id="search-results" class="search-results"></div>
+
         <div class="weather-info" id="weather-info">
-            <!-- ရာသီဥတု အချက်အလက်တွေက ဒီမှာ ပေါ်လာပါမယ် -->
             <p class="default-text">မြို့နာမည် ရိုက်ထည့်ပြီး ရှာကြည့်ပါ</p>
         </div>
     </div>
